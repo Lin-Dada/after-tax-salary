@@ -1,0 +1,14 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}税后工资计算器{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>税后工资计算器</h1><blockquote>by 林大大，github链接：<a href="https://github.com/Lin-Dada/after-tax-salary">https://github.com/Lin-Dada/after-tax-salary</a></blockquote><hr>
+        <form class="form" method="POST">
+        {{ wtf.quick_form(form) }}
+        </form>
+    </div>
+
+{% endblock %}
