@@ -1,0 +1,14 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}税后工资计算器{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>税后工资计算器</h1><blockquote>by 林大大</blockquote><hr>
+        {% autoescape false %}
+        {{ result }}
+        {% endautoescape%}
+    </div>
+
+{% endblock %}
