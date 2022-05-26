@@ -13,6 +13,7 @@ nianzhong *= base
 last_yingna = 0.0 # 上个月累计已扣的税额
 yingnasd = 0.0 # 当前累计应纳所得税额
 
+# 计算社保和公积金，可网上查询基数和比例后在这里添加城市：https://www.findhro.com/22js1381.html
 def cacl_shebao_and_gongjijin(base, city):
     # 广州
     # 养老保险最高基数为22941，缴纳比例是8%
